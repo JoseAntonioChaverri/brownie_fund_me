@@ -3,14 +3,6 @@ pragma solidity ^0.6.0;
 
 import "@chainlink/contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol";
 
-/**
- * @title MockV3Aggregator
- * @notice Based on the FluxAggregator contract
- * @notice Use this contract when you need to test
- * other contract's ability to read data from an
- * aggregator contract, but how the aggregator got
- * its answer is unimportant
- */
 contract MockV3Aggregator is AggregatorV2V3Interface {
     uint256 public constant override version = 0;
 
@@ -97,6 +89,3 @@ contract MockV3Aggregator is AggregatorV2V3Interface {
         return "v0.6/tests/MockV3Aggregator.sol";
     }
 }
-
-// MockOracle
-// Function signatures, event signatures, log topics
