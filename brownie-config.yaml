@@ -25,8 +25,5 @@ networks:
   ganache-local:
     verify: False
 
-
-
-
 wallets:
   from_key: ${PRIVATE_KEY}    
