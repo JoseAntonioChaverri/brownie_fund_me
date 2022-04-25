@@ -6,7 +6,7 @@ from scripts.helpful_scripts import (
     LOCAL_BLOCKCHAIN_ENVIRONMENTS,
 )
 
-
+# deploy function
 def deploy_fund_me():
     account = get_account()
     # pass the price feed address to our fundme contract / if we are on a persistent network like rinkeby, use the associated address, otherwise, deploy mocks
